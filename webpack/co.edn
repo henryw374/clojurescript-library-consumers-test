@@ -1,0 +1,7 @@
+{:optimizations :advanced
+ :main using.js-joda
+ :output-to "out/index.js"
+ :output-dir "out"
+ :target :bundle
+ :bundle-cmd {:none ["npx" "webpack" "--mode=development"]
+              :default ["npx" "webpack"]}}

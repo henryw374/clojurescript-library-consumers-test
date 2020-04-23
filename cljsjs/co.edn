@@ -1,0 +1,2 @@
+{:optimizations :advanced
+ :main using.js-joda}
