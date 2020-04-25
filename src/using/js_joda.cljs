@@ -2,4 +2,4 @@
   (:require [java.time :refer [LocalDate]]))
 
 
-(.log js/console (str "today's date is" (.now LocalDate)))
+(.log js/console (str "today's date is " (.now LocalDate)))
