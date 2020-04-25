@@ -5,4 +5,6 @@ cljs libraries
 based on [webpack demo](https://github.com/clojure/clojurescript-site/blob/april-release-target-bundle/content/guides/webpack.adoc)
 on Clojurescript site
 
-clj -m cljs.main -co co.edn -v -c -r
+first need to get the transitive npm deps
+turn on :infer-externs
+remove the cljsjs dependency

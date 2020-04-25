@@ -2,3 +2,4 @@ out/
 .cpcache/
 .repl*/
 *.iml
+node_modules/

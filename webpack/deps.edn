@@ -1,4 +1,1 @@
-{:paths   ["src"]
- :deps    {cljs.java-time {:mvn/version "0.1.16" :exclusions [henryw374/js-joda]}
-           org.clojure/clojurescript       {:git/url "https://github.com/clojure/clojurescript.git"
-                                            :sha "e66131422cbd67c4a594e194f09b49f2c3ae3d2e"}}}
+{:deps    {common       {:local/root ".."}}}
