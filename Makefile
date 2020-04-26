@@ -1,5 +1,7 @@
-.PHONY: 		cljsjs webpack shadow
+.PHONY: 		cljsjs webpack shadow compiling-with-npm-deps-opt
 
+.PHONY: compiling-with-npm-deps-opt
+			cd compiling-with-npm-deps-opt && rm -rf out && clj -m cljs.main --install-deps && clj -m cljs.main -co co.edn -c --repl
 cljsjs:
 			cd cljsjs && rm -rf out && clj -m cljs.main -co co.edn -c --repl
 webpack:
