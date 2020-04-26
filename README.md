@@ -1,21 +1,32 @@
-# test that different clojurescript build types can consume an npm-depending library
+# Does you Clojurescript library work for everyone?
 
-usage:
+The aim of this project is to help test that different Clojurescript build types can 
+successfully consume an npm-depending library.
+
+This project currently uses [cljs.java-time](https://github.com/henryw374/cljs.java-time) as the 
+project that is tested, but is easily changed to test other libraries.
+
+## Usage
 
 ```
 make list
 
 ```
 
-shows the available build targets. Run e.g. `make webpack` and open a browser at http://localhost:9000 and open the console.
-you should see a sensible message printed if the build succeeded.
+shows the available build targets. For each, run the task e.g. `make webpack` and open a browser at http://localhost:9000 and open the console.
+You should see a sensible message printed if the build succeeded.
 
-## relevant open Cljs issues
+The top-level Makefile shows the commands used to compile for each build tool
 
-There are a few open Jira issues relating to compilation with `{:npm-deps true}`
+## Testing your own npm-depending library
 
-Support transitive Node dependencies with foreign libraries
-https://clojure.atlassian.net/browse/CLJS-3117
+Change the top-level deps.edn to point to your library and change the contents of the 
+`clojurescript.using-npm-dependency` namespace to do something to use the library.
 
-Missing warning when npm-deps shadows global-exports or vice versa
-https://clojure.atlassian.net/browse/CLJS-3082
+## Rationale
+
+It is important for library authors to check if an npm-depending library works when subjected to advanced 
+compilation. Also useful is to be able to let users of the library know what they must do to make
+your library work  - whatever their Clojurescript build setup. So this library does both those 
+things: provides examples of all the build tools compiling an npm-depending library under advanced
+optimization.  

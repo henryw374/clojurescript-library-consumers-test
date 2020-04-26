@@ -1,5 +1,5 @@
 {:optimizations :advanced
- :main using.js-joda
+ :main clojurescript.using-npm-dependency
  :output-to "out/index.js"
  :output-dir "out"
  :infer-externs true

@@ -3,7 +3,7 @@
  :builds {:app {:target           :browser
                 :compiler-options {}
                 :output-dir "out"
-                :modules {:main {:entries [using.js-joda]}}
+                :modules {:main {:entries [clojurescript.using-npm-dependency]}}
                 
                 }}}
 

@@ -1,2 +1,2 @@
 {:optimizations :advanced
- :main using.js-joda}
+ :main clojurescript.using-npm-dependency}
