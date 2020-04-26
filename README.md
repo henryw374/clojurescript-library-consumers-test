@@ -3,8 +3,7 @@
 The aim of this project is to help test that different Clojurescript build types can 
 successfully consume an npm-depending library.
 
-This project currently uses [cljs.java-time](https://github.com/henryw374/cljs.java-time) as the 
-project that is tested, but is easily changed to test other libraries.
+This project currently tests the npm-depending library [cljs.java-time](https://github.com/henryw374/cljs.java-time), but is easily changed to test other libraries.
 
 ## Usage
 
