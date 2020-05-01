@@ -1,7 +1,7 @@
 # Does you Clojurescript library work for everyone?
 
 The aim of this project is to help test that different Clojurescript build types can 
-successfully consume an npm-depending library.
+successfully consume an npm-depending library. Read [more background on why this is useful](http://widdindustries.com/cljs-npm-libraries/)
 
 This project was created to support my [guide to authoring Clojurescript libraries]()
 
