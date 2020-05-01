@@ -1,4 +1,4 @@
-# Does you Clojurescript library work for everyone?
+# Does your Clojurescript library work for everyone?
 
 The aim of this project is to help test that different Clojurescript build types can 
 successfully consume an npm-depending library.
